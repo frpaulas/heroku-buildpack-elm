@@ -1,10 +1,8 @@
 #!/bin/sh
 
-if [ -f $1/elm-package.json ]; then
-  echo "FOUND ELM-PACKAGE.JSON AT $1"
+if [ -f $1/elm/elm-package.json ]; then
   echo "Elm"
   exit 0
 else
-  echo "DID NOT FIND ELM-PACKAGE.JSON AT $1"
   exit 1
 fi
